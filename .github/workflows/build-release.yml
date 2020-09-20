@@ -49,7 +49,7 @@ jobs:
 
       - name: Test
         if: success()
-        run: npm run test:prod
+        run: npm run test
 
       - name: Coveralls
         if: success()

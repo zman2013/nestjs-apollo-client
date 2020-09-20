@@ -1,10 +1,10 @@
 # @zman2013/nestjs-apollo-client
 
-[![Build Status](https://github.com/zman2013/ts-apollo-client/workflows/Build%20and%20Release/badge.svg)](https://github.com/zman2013/ts-apollo-client/workflows/Build%20and%20Release/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/zman2013/ts-apollo-client/badge.svg?branch=master)](https://coveralls.io/github/zman2013/ts-apollo-client?branch=master)
-[![npm](https://img.shields.io/npm/v/@zman2013/ts-apollo-client.svg)](https://www.npmjs.com/package/@zman2013/ts-apollo-client/)
+[![Build Status](https://github.com/zman2013/nestjs-apollo-client/workflows/Build%20and%20Release/badge.svg)](https://github.com/zman2013/nestjs-apollo-client/workflows/Build%20and%20Release/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/zman2013/nestjs-apollo-client/badge.svg?branch=master)](https://coveralls.io/github/zman2013/nestjs-apollo-client?branch=master)
+[![npm](https://img.shields.io/npm/v/@zman2013/nestjs-apollo-client.svg)](https://www.npmjs.com/package/@zman2013/nestjs-apollo-client/)
 
-> A TypeScript implementation of a client for Apollo([https://github.com/ctripcorp/apollo](https://github.com/ctripcorp/apollo)), the reliable configuration management system.
+> A nestjs module implementation of a client for Apollo([https://github.com/ctripcorp/apollo](https://github.com/ctripcorp/apollo)), the reliable configuration management system.
 
 ## Usage
 
