@@ -9,7 +9,7 @@
 ## Usage
 
 ```bash
-npm install @zman2013/nestjs-apollo-client
+npm install nestjs-apollo-client
 ```
 
 ### example1
