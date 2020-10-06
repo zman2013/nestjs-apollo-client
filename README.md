@@ -1,4 +1,4 @@
-# @zman2013/nestjs-apollo-client
+# nestjs-apollo-client
 
 [![Build Status](https://github.com/zman2013/nestjs-apollo-client/workflows/Build%20and%20Release/badge.svg)](https://github.com/zman2013/nestjs-apollo-client/workflows/Build%20and%20Release/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/zman2013/nestjs-apollo-client/badge.svg?branch=master)](https://coveralls.io/github/zman2013/nestjs-apollo-client?branch=master)
