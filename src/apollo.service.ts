@@ -17,25 +17,27 @@ export class ApolloService extends EventEmitter implements OnModuleDestroy{
     private _configs: any
     private _timer: NodeJS.Timeout
 
+    private static readonly SERVICE = new ApolloService()
+
     static async init(meta: apollo.Meta, refreshIntervalMillis?: number){
-        const service = new ApolloService()
         console.log('service meta:', meta)
-        service._configs = await apollo.getConfig(meta)
+        ApolloService.SERVICE._configs = await apollo.getConfig(meta)
 
         // refresh
         if( refreshIntervalMillis ){
-            service._timer = setInterval(()=>{
+          clearInterval(ApolloService.SERVICE._timer)
+          ApolloService.SERVICE._timer = setInterval(()=>{
                 apollo.getConfig(meta)
                     .then(config => {
-                        service.emit('refresh')
-                        service._configs = {...service._configs, ...config}
+                      ApolloService.SERVICE.emit('refresh')
+                      ApolloService.SERVICE._configs = {...ApolloService.SERVICE._configs, ...config}
                     }).catch(e => {
-                      service.emit('error', e)
+                      ApolloService.SERVICE.emit('error', e)
                     })
             }, refreshIntervalMillis)
         }
 
-        return service
+        return ApolloService.SERVICE
     }
 
     get(key: string): any{
@@ -44,7 +46,7 @@ export class ApolloService extends EventEmitter implements OnModuleDestroy{
 
     stopRefresh(){
         console.log("stop apollo refreshing")
-        clearTimeout(this._timer)
+        clearInterval(this._timer)
     }
 
     onModuleDestroy() {
