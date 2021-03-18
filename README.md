@@ -6,6 +6,8 @@
 
 > A nestjs module implementation of a client for Apollo([https://github.com/ctripcorp/apollo](https://github.com/ctripcorp/apollo)), the reliable configuration management system.
 
+This module is registered in the global scope.
+
 ## Usage
 
 ```bash

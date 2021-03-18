@@ -7,6 +7,7 @@ export class ApolloModule {
 
     static forRootAsync(meta: apollo.Meta, refreshIntervalMillis?: number): DynamicModule{
         return {
+            global: true,
             module: ApolloModule,
             providers: [{
                 provide: ApolloService,
