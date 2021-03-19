@@ -6,7 +6,7 @@ async function getConfig(meta){
     console.log('meta', meta.serverUrl)
 
     if(meta.serverUrl === 'http://refresh'){
-        if(i>5){
+        if(i>10){
             throw new Error('error...')
         }
         return {
